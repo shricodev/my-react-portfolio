@@ -17,6 +17,9 @@ module.exports = {
                 1024: "1024px",
             },
         },
+        backgroundImage: {
+            "bg-pattern": 'url("./src/assets/bg-texture-black.png")',
+        },
     },
     plugins: [],
 };

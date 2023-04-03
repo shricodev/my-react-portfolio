@@ -4,7 +4,7 @@
 @layer base {
     /* declaring variables */
     :root {
-        --color-bg: #26283c;
+        --color-bg: #23253b;
         --color-bg-variant: #2c2c6c;
         --color-primary: #4bb5f5;
         --color-primary-variant: #2c2c6c;
@@ -34,9 +34,9 @@
 
     body {
         font-family: "Poppins", "sans-serif";
-        background: #26283c;
+        background: var(--color-bg);
         color: #fff;
-        background-image: url("./assets/bg-texture-black.png");
+        background-image: url("../src/assets/bg-texture-black.png");
     }
 
     h1,
@@ -53,6 +53,7 @@
 
     section {
         margin-top: 8rem;
+        height: 100vh;
     }
 
     section > h2,
@@ -109,6 +110,24 @@
         border: 1px solid var(--color-primary);
         transition: var(--transition);
         -webkit-tap-highlight-color: transparent;
+    }
+
+    nav > a {
+        background: transparent;
+        color: var(--color-light);
+        border-radius: 50%;
+        padding: 0.8rem;
+        font-size: 1.6rem;
+    }
+
+    nav > a:hover {
+        background: rgba(0, 0, 0, 0.3);
+        color: var(--color-primary);
+    }
+
+    nav > a.active {
+        background: var(--color-bg);
+        color: var(--color-primary);
     }
 
     .btn:hover {
