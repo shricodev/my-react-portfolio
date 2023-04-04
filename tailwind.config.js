@@ -4,9 +4,8 @@ module.exports = {
     theme: {
         extend: {
             container: {
+                // to center the elemnt horizontally
                 center: true,
-                // to center the elemnt in the center horizontally
-                margin: "0 auto",
             },
             transitionDuration: {
                 400: "400ms",
@@ -14,11 +13,19 @@ module.exports = {
                 600: "600ms",
             },
             screens: {
-                1024: "1024px",
+                sm: "600px",
+                md: "1024px",
+                768: "768px",
             },
-        },
-        backgroundImage: {
-            "bg-pattern": 'url("./src/assets/bg-texture-black.png")',
+            rotate: {
+                10: "10deg",
+            },
+            borderRadius: {
+                "2rem": "2rem",
+            },
+            colors: {
+                primary: "#4bb5f5",
+            },
         },
     },
     plugins: [],
