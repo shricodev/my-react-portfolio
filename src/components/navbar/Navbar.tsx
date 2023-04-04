@@ -9,7 +9,7 @@ import { useState } from "react";
 const Navbar = () => {
     const [activeNav, setActiveNav] = useState("#");
     return (
-        <nav className="align-center container fixed bottom-5 left-0 right-0 flex w-max gap-[3px] rounded-full bg-black bg-opacity-[0.4] p-3 px-[1.7] py-[0.2] backdrop-blur-lg">
+        <nav className="align-center container fixed bottom-5 left-0 right-0 z-[9999] flex w-max gap-[3px] rounded-full bg-black bg-opacity-[0.4] p-3 px-[1.2] py-[0.2] backdrop-blur-lg">
             <a
                 href="#"
                 onClick={() => {
@@ -33,7 +33,11 @@ const Navbar = () => {
                 onClick={() => {
                     setActiveNav("#experience");
                 }}
-                className={activeNav === "#experience" ? "active" : ""}
+                className={
+                    activeNav === "#experience"
+                        ? "active max-[300px]:hidden"
+                        : "max-[300px]:hidden"
+                }
             >
                 <RiBook2Line />
             </a>
@@ -60,7 +64,11 @@ const Navbar = () => {
                 onClick={() => {
                     setActiveNav("#contact");
                 }}
-                className={activeNav === "#contact" ? "active" : ""}
+                className={
+                    activeNav === "#contact"
+                        ? "active max-[300px]:hidden"
+                        : "max-[300px]:hidden"
+                }
             >
                 <AiOutlineMessage />
             </a>
