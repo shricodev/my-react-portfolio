@@ -8,7 +8,7 @@
         --color-bg-variant: #2c2c6c;
         --color-primary: #4bb5f5;
         --color-primary-variant: #2f2f69;
-        --color-light: 255 255 255;
+        --color-light: rgba(255, 255, 255, 0.6);
 
         --transition: all 400ms ease-in;
 
@@ -114,7 +114,7 @@
 
     nav > a {
         background: transparent;
-        color: var(--color-light);
+        color: #fff;
         border-radius: 50%;
         padding: 0.8rem;
         font-size: 1.6rem;
@@ -128,6 +128,20 @@
     nav > a.active {
         background: #373434;
         color: var(--color-primary);
+    }
+
+    .experience__container > div {
+        background: var(--color-bg-variant);
+        padding: 2.4rem 3.5rem;
+        border-radius: 2rem;
+        border: 3px solid transparent;
+    }
+
+    .experience__container > div:hover {
+        background: transparent;
+        transition: var(--transition);
+        border-color: var(--color-primary-variant);
+        cursor: default;
     }
 
     .btn:hover {
@@ -197,10 +211,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 2px solid transparent;
+        border: 1px solid transparent;
         background: var(--color-bg-variant);
         border-radius: 1rem;
-        padding: 2rem;
+        padding: 1.9rem;
         transition: var(--transition);
     }
 

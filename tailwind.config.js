@@ -16,6 +16,7 @@ module.exports = {
                 sm: "600px",
                 md: "1024px",
                 768: "768px",
+                xsm: "500px",
             },
             rotate: {
                 10: "10deg",

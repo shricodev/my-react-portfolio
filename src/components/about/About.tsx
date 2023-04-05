@@ -21,12 +21,12 @@ const About = () => {
                 </div>
 
                 <div className="about__content max-sm:text-center">
-                    <div className="about__cards grid grid-cols-3 gap-[1.5rem] max-md:mt-3 max-sm:grid-cols-2 max-sm:gap-[1rem]">
+                    <div className="about__cards grid grid-cols-3 gap-[1.3rem] max-md:mt-3 max-sm:grid-cols-2 max-sm:gap-[1rem]">
                         <article>
                             <div className="about__card">
                                 <FaAward className="about__icon" />
                                 <h5>Experience</h5>
-                                <small>2+ Years Working</small>
+                                <small>2+ Years of Experience</small>
                             </div>
                         </article>
                         <article>
