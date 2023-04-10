@@ -36,7 +36,6 @@
         font-family: "Poppins", "sans-serif";
         background: var(--color-bg);
         color: #fff;
-        background-image: url("../src/assets/bg-texture-black.png");
     }
 
     h1,
@@ -231,6 +230,24 @@
     .about__card small {
         font-size: 0.7rem;
         color: var(--color-light);
+    }
+
+    .layer-big {
+        background-image: url("../src/assets/layer-big.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .layer-md {
+        background-image: url("../src/assets/layer-mid.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .layer-sm {
+        background-image: none;
     }
 
     .about__icon {
