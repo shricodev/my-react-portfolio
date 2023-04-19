@@ -171,7 +171,7 @@ const Experience = () => {
                         <article className="experience__details flex gap-[1rem]">
                             <BsPatchCheckFill className="color-primary mt-[6px]" />
                             <div>
-                                <h4>PostgreSQL</h4>
+                                <h4>Postgres</h4>
                                 <small className="text-light">Advanced</small>
                             </div>
                         </article>

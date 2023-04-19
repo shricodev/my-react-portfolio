@@ -3,7 +3,7 @@
 const HeaderButtons = () => {
     return (
         <div className="header__buttons mt-[2.5rem] flex justify-center gap-[1.2rem]">
-            {/* TODO: place your resume here when it is ready */}
+            {/* TODO: place my resume here when it is ready */}
             {/* <a href={Resume} download>
                 Download Resume
             </a> */}
