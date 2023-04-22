@@ -155,6 +155,43 @@
         -webkit-tap-highlight-color: transparent;
     }
 
+    .service {
+        background: var(--color-bg-variant);
+        border-radius: 0 0 2rem 2rem;
+        border: 3px solid var(--color-bg);
+        height: fit-content;
+        transition: var(--transition);
+    }
+
+    .service__head {
+        background: var(--color-primary);
+        padding: 2rem;
+        border-radius: 0 0 1.5rem 1.5rem;
+        box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    .service__head h3 {
+        color: var(--color-bg);
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .service__list li {
+        display: flex;
+        margin-bottom: 0.9rem;
+        gap: 1rem;
+    }
+
+    .service__list-icon {
+        color: var(--color-primary);
+        margin-top: 3px;
+        font-size: 1.2rem;
+    }
+
+    .service__list p {
+        font-size: 0.9rem;
+    }
+
     .btn-primary:hover {
         background-color: #fff;
     }
