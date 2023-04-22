@@ -24,7 +24,7 @@ const Portfolio = () => {
                             <div className="portfolio__item-cta">
                                 <a href={item.github} target="_blank">
                                     <button className="btn rounded-2xl outline-none transition duration-400 ease-in hover:text-white">
-                                        Github
+                                        Source Code
                                     </button>
                                 </a>
                                 <a href={liveUrl} target="_blank">
@@ -39,6 +39,16 @@ const Portfolio = () => {
                         </article>
                     );
                 })}
+            </div>
+            <div className="mt-[3.5rem] flex justify-center">
+                <p className="text-[#ffffffb8]">
+                    For more visit{" "}
+                    <a href="https://github.com/OctoPie23" target="_blank">
+                        <span className="cursor-pointer font-bold text-primary">
+                            My Github Profile✌️
+                        </span>
+                    </a>
+                </p>
             </div>
         </section>
     );
