@@ -22,22 +22,22 @@ const About = () => {
 
                 <div className="about__content max-sm:text-center">
                     <div className="about__cards grid grid-cols-3 gap-[1.3rem] max-md:mt-3 max-sm:grid-cols-2 max-sm:gap-[1rem]">
-                        <article>
-                            <div className="about__card">
+                        <article className="flex flex-col">
+                            <div className="about__card h-full flex-1">
                                 <FaAward className="about__icon" />
                                 <h5>Experience</h5>
                                 <small>2+ Years of Experience</small>
                             </div>
                         </article>
-                        <article>
-                            <div className="about__card">
+                        <article className="flex flex-col">
+                            <div className="about__card h-full flex-1">
                                 <HiOutlineUsers className="about__icon flex justify-center" />
                                 <h5>Worked With</h5>
                                 <small>20+ Clients Globally</small>
                             </div>
                         </article>
-                        <article>
-                            <div className="about__card">
+                        <article className="flex flex-col">
+                            <div className="about__card h-full flex-1">
                                 <BsFolderCheck className="about__icon" />
                                 <h5>Projects</h5>
                                 <small>40+ Finished Projects</small>
@@ -45,8 +45,8 @@ const About = () => {
                         </article>
                     </div>
                     <p className="my-[2rem] ml-0 mr-[2.6rem] text-[#9b969d] max-md:mx-0 max-md:mb-[1.5rem] max-md:mt-[1rem] max-sm:mx-0 max-sm:my-[1.5rem]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Illum optio, perspiciatis enim suscipit molestiae
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.Illum optio, perspiciatis enim suscipit molestiae
                         ratione natus velit nihil ipsum aliquam laudantium
                         quaerat earum nemo officiis sed odio alias omnis magnam.
                     </p>

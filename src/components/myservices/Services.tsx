@@ -6,7 +6,7 @@ const Services = () => {
             <h5>What I Offer</h5>
             <h2>Services</h2>
             <div className="services_container container grid grid-cols-3 gap-[3rem] max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-[1.5rem]">
-                <article className="service  hover:cursor-default  hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
+                <article className="service hover:cursor-default  hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
                     <div className="service__head">
                         <h3>FullStack Development</h3>
                     </div>
