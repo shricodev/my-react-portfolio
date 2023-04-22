@@ -113,7 +113,7 @@
 
     nav > a {
         background: transparent;
-        color: #fff;
+        color: #e2dede;
         border-radius: 50%;
         padding: 0.8rem;
         font-size: 1.6rem;
@@ -190,6 +190,34 @@
 
     .service__list p {
         font-size: 0.9rem;
+    }
+
+    .portfolio__item {
+        background: var(--color-bg-variant);
+        padding: 1rem;
+        border-radius: 2rem;
+        border: 3px solid transparent;
+        transition: var(--transition);
+    }
+
+    .portfolio__item-image {
+        border-radius: 1.5rem;
+        overflow: hidden;
+    }
+
+    .portfolio__item h3 {
+        margin: 1.2rem 0 1.3rem;
+    }
+
+    .portfolio__item-cta {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2px;
+    }
+
+    .portfolio__item:hover {
+        border-color: var(--color-primary-variant);
+        background: transparent;
     }
 
     .btn-primary:hover {
