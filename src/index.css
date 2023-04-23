@@ -77,6 +77,46 @@
         width: 100%;
         object-fit: cover;
     }
+
+    nav > a {
+        background: transparent;
+        color: #e2dede;
+        border-radius: 50%;
+        padding: 0.8rem;
+        font-size: 1.6rem;
+    }
+
+    nav > a:hover {
+        background: rgba(0, 0, 0, 0.2);
+        color: var(--color-primary);
+    }
+
+    nav > a.active {
+        background: var(--color-primary);
+        color: var(--color-bg);
+    }
+
+    form input {
+        background: transparent;
+        border: 3px solid var(--color-bg-variant);
+    }
+
+    form textarea {
+        border: 3px solid var(--color-bg-variant);
+        resize: none;
+    }
+
+    footer {
+        background: var(--color-primary);
+        padding: 3rem 0;
+        text-align: center;
+        font-size: 0.9rem;
+        margin-top: 7rem;
+    }
+
+    footer a {
+        color: var(--color-bg);
+    }
 }
 
 @tailwind components;
@@ -88,10 +128,6 @@
         /* center the div */
         left: calc(50% - 11.5rem);
         padding: 5rem 0rem 1rem 0rem;
-    }
-
-    a:hover {
-        color: #fff;
     }
 
     /* initial width of the container */
@@ -109,24 +145,6 @@
         border: 1px solid var(--color-primary);
         transition: var(--transition);
         -webkit-tap-highlight-color: transparent;
-    }
-
-    nav > a {
-        background: transparent;
-        color: #e2dede;
-        border-radius: 50%;
-        padding: 0.8rem;
-        font-size: 1.6rem;
-    }
-
-    nav > a:hover {
-        background: rgba(0, 0, 0, 0.2);
-        color: var(--color-primary);
-    }
-
-    nav > a.active {
-        background: #373434;
-        color: var(--color-primary);
     }
 
     .experience__container > div {
@@ -250,18 +268,47 @@
         color: var(--color-light);
     }
 
-    form input {
-        background: transparent;
-        border: 3px solid var(--color-bg-variant);
-    }
-
-    form textarea {
-        border: 3px solid var(--color-bg-variant);
-        resize: none;
-    }
-
     .btn-primary:hover {
         background-color: #fff;
+    }
+
+    .footer__logo {
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+
+    .footer__socials a,
+    .code__profiles a {
+        font-size: 1.2rem;
+        background: var(--color-bg);
+        color: #fff;
+        padding: 0.8rem;
+        border-radius: 0.7rem;
+        display: flex;
+        border: 1px solid transparent;
+    }
+
+    .footer__socials a:hover,
+    .code__profiles a:hover {
+        background: transparent;
+        color: var(--color-bg);
+        border-color: var(--color-bg);
+    }
+
+    .code__profiles a:hover {
+        border-color: transparent;
+    }
+
+    .footer__copyright {
+        color: var(--color-bg);
+    }
+
+    .coding__profiles-tag {
+        font-size: 1rem;
+        margin-bottom: 4px;
+        color: var(--color-bg);
+        font-weight: 300;
     }
 
     @media screen and (max-width: 1024px) {
@@ -303,6 +350,10 @@
     /* remove the scrollbar from the site */
     ::-webkit-scrollbar {
         display: none;
+    }
+
+    a:hover {
+        color: #fff;
     }
 
     .header__container {
