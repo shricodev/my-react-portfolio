@@ -18,7 +18,10 @@ function App() {
             <Experience />
             <Services />
             <Portfolio />
-            <Testimonials />
+            {/* 
+             TODO: uncomment the following testimonials after receiving some. 
+            */}
+            {/* <Testimonials /> */}
             <Contact />
             <Footer />
         </>

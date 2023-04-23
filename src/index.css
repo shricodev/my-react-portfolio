@@ -215,6 +215,14 @@
         margin-bottom: 2px;
     }
 
+    .client__review {
+        color: var(--color-light);
+        font-weight: 300;
+        display: block;
+        width: 80%;
+        margin: 0.8rem auto 0;
+    }
+
     .portfolio__item:hover {
         border-color: var(--color-primary-variant);
         background: transparent;
@@ -319,6 +327,14 @@
         color: var(--color-primary);
         margin-bottom: 1rem;
         font-size: 1.9rem;
+    }
+
+    .testimonial {
+        background: var(--color-bg-variant);
+    }
+
+    .client__avatar {
+        border: 0.4rem solid #5a6acd;
     }
 
     .color-bg {

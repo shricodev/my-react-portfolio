@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header className="layer-big max-sm:layer-sm max-md:layer-md h-screen overflow-hidden pt-[5rem] max-md:h-[72vh]  max-sm:h-[100vh] max-sm:pt-[2rem]">
             <div className="header__container container h-[100%] text-center">
-                <h5 className="mb-3">Hello I'm</h5>
+                <h5>Hello I'm</h5>
                 <h1>
                     Shrijal <span className="text-[#54b6f4]">Acharya</span>
                 </h1>
