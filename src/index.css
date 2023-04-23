@@ -223,9 +223,41 @@
         margin: 0.8rem auto 0;
     }
 
+    .container.contact__container {
+        grid-template-columns: 30% 58%;
+    }
+
+    .contact__option {
+        background: var(--color-bg-variant);
+        padding: 1.2rem;
+        border-radius: 1.2rem;
+        text-align: center;
+        border: 3px solid transparent;
+        transition: var(--transition);
+    }
+
+    .contact__option:hover {
+        background: transparent;
+        border-color: var(--color-bg-variant);
+    }
+
     .portfolio__item:hover {
         border-color: var(--color-primary-variant);
         background: transparent;
+    }
+
+    .contact__option h5 {
+        color: var(--color-light);
+    }
+
+    form input {
+        background: transparent;
+        border: 3px solid var(--color-bg-variant);
+    }
+
+    form textarea {
+        border: 3px solid var(--color-bg-variant);
+        resize: none;
     }
 
     .btn-primary:hover {
@@ -240,6 +272,12 @@
         section {
             margin-top: 6rem;
         }
+
+        /* this is specifically for the contact__container  */
+        .container.contact__container {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
     }
 
     @media screen and (max-width: 600px) {
@@ -249,6 +287,11 @@
 
         section > h2 {
             margin-bottom: 2rem;
+        }
+
+        /* this is specifically for the contact__container  */
+        .container.contact__container {
+            width: var(--container-width-sm);
         }
     }
 }
@@ -307,13 +350,6 @@
 
     .layer-big {
         background-image: url("../src/assets/layer-big.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .layer-md {
-        background-image: url("../src/assets/layer-mid.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
