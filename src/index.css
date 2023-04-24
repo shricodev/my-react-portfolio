@@ -147,6 +147,15 @@
         -webkit-tap-highlight-color: transparent;
     }
 
+    .scroll__down {
+        position: absolute;
+        right: -2rem;
+        bottom: 7.6rem;
+        transform: rotate(90deg);
+        font-weight: 200;
+        font-size: 1rem;
+    }
+
     .experience__container > div {
         background: var(--color-bg-variant);
         padding: 2.4rem 3.5rem;

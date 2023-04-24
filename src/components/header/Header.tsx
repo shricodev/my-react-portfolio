@@ -24,11 +24,14 @@ const Header = () => {
                         className="my__image relative bottom-[2.5rem] left-[-4] h-[98%] w-full max-md:bottom-[2rem] max-md:h-[95%] "
                     />
                 </div>
+                <a href="#contact" className="scroll__down max-768:hidden">
+                    Scroll Down
+                </a>
                 <a
                     href="#contact"
                     className="scroll__down absolute bottom-[2rem] right-[-2.3rem] animate-bounce text-5xl max-768:hidden"
                 >
-                    <BsFillArrowDownCircleFill />
+                    <BsFillArrowDownCircleFill className="relative right-[1.95rem] top-[0.6rem] text-[2.5rem]" />
                 </a>
             </div>
         </header>
