@@ -1,6 +1,10 @@
 // import Resume from "../../assets/my-resume.pdf";
 
-const HeaderButtons = () => {
+type NavbarProps = {
+    setActiveNav: (value: string) => void;
+};
+
+const HeaderButtons = ({ setActiveNav }: NavbarProps) => {
     return (
         <div className="header__buttons mt-[2.5rem] flex justify-center gap-[1.2rem]">
             {/* TODO: place my resume here when it is ready */}
@@ -17,6 +21,9 @@ const HeaderButtons = () => {
             <a
                 href="#contact"
                 className="btn btn-primary transition duration-500 ease-in"
+                onClick={() => {
+                    setActiveNav("#contact");
+                }}
             >
                 Let's Connect
             </a>

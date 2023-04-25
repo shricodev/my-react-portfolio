@@ -1,9 +1,13 @@
-import aboutImage from "../../assets/about-image.jpg";
+import aboutImage from "../../assets/about-image.webp";
 import { FaAward } from "react-icons/fa";
 import { HiOutlineUsers } from "react-icons/hi";
 import { BsFolderCheck } from "react-icons/bs";
 
-const About = () => {
+type NavbarProps = {
+    setActiveNav: (value: string) => void;
+};
+
+const About = ({ setActiveNav }: NavbarProps) => {
     return (
         <section id="about">
             <h5>Get to know</h5>
@@ -50,7 +54,13 @@ const About = () => {
                         ratione natus velit nihil ipsum aliquam laudantium
                         quaerat earum nemo officiis sed odio alias omnis magnam.
                     </p>
-                    <a href="#contact" className="btn btn-primary rounded-2xl">
+                    <a
+                        href="#contact"
+                        className="btn btn-primary rounded-2xl"
+                        onClick={() => {
+                            setActiveNav("#contact");
+                        }}
+                    >
                         Let's Talk
                     </a>
                 </div>

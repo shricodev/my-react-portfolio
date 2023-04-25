@@ -4,10 +4,13 @@ import { RiBook2Line } from "react-icons/ri";
 import { RiServiceLine } from "react-icons/ri";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { AiOutlineMessage } from "react-icons/ai";
-import { useState } from "react";
 
-const Navbar = () => {
-    const [activeNav, setActiveNav] = useState("#");
+type NavbarProps = {
+    activeNav: string;
+    setActiveNav: (value: string) => void;
+};
+
+const Navbar = ({ activeNav, setActiveNav }: NavbarProps) => {
     return (
         <nav className="align-center container fixed bottom-5 left-0 right-0 z-[9999] flex w-max gap-[3px] rounded-full bg-black bg-opacity-[0.25] p-3 px-[1.2] py-[0.2] backdrop-blur-lg">
             <a

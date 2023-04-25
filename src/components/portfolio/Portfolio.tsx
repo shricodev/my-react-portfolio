@@ -12,13 +12,17 @@ const Portfolio = () => {
                     if ("liveUrl" in item && typeof item.liveUrl === "string") {
                         liveUrl = item.liveUrl;
                     } else {
-                        liveUrl = "";
+                        liveUrl = "#";
                     }
 
                     return (
                         <article key={item.id} className="portfolio__item">
                             <div className="portfolio__item-image">
-                                <img src={item.image} alt={item.title} />
+                                <img
+                                    src={item.image}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
                             </div>
                             <h3>{item.title}</h3>
                             <div className="portfolio__item-cta">
