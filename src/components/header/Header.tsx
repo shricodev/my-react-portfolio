@@ -1,6 +1,5 @@
 import ME from "../../assets/my-image.webp";
-import HeaderButtons from "./HeaderButtons";
-import HeaderSocials from "./HeaderSocials";
+import { HeaderButtons, HeaderSocials } from "../../index";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
 type NavbarProps = {

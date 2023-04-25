@@ -1,4 +1,4 @@
-import { data } from "./TestimonialsData";
+import { testiData } from "../../index";
 import { Pagination } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,7 +21,7 @@ const Testimonials = () => {
                 slidesPerView={1}
                 pagination={{ clickable: true }}
             >
-                {data.map(({ name, avatar, review }, index) => {
+                {testiData.map(({ name, avatar, review }, index) => {
                     return (
                         <SwiperSlide
                             key={index}

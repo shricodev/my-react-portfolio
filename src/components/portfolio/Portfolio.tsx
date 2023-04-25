@@ -1,4 +1,4 @@
-import { data } from "./PortfolioData";
+import { portData } from "../../index";
 
 const Portfolio = () => {
     return (
@@ -7,7 +7,7 @@ const Portfolio = () => {
             <h2>Portfolio</h2>
 
             <div className="portfolio__container container grid grid-cols-3 gap-[2.5rem] max-md:grid-cols-2 max-md:gap-[1.2rem] max-sm:grid-cols-1 max-sm:gap-[1rem]">
-                {data.map((item) => {
+                {portData.map((item) => {
                     let liveUrl: string;
                     if ("liveUrl" in item && typeof item.liveUrl === "string") {
                         liveUrl = item.liveUrl;
