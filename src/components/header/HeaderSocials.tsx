@@ -4,7 +4,7 @@ import { SiHashnode } from "react-icons/si";
 
 const HeaderSocials = () => {
     return (
-        <div className="header__socials after:content-'' absolute bottom-[2rem] left-0 flex flex-col items-center gap-[1.1rem] text-xl after:h-[3rem] after:w-[3px] after:bg-[#4bb5f5] max-768:hidden">
+        <div className="header__socials after:content-'' absolute bottom-[1.5rem] left-0 flex flex-col items-center gap-[1.3rem] text-xl after:h-[3rem] after:w-[3px] after:bg-[#4bb5f5] max-768:hidden">
             <a
                 href="https://github.com/OctoPie23"
                 target="_blank"

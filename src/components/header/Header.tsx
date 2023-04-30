@@ -20,11 +20,11 @@ const Header = ({ setActiveNav }: NavbarProps) => {
                     TODO: HeaderSocials and BsFillArrowDownCircleFill icons go far away in the viewport when zooming out. Fix this!!
                  */}
                 <HeaderSocials />
-                <div className="me absolute mt-[4rem] h-[40rem] w-[23rem] overflow-hidden rounded-t-full max-sm:h-[36rem]">
+                <div className="me absolute mt-[4rem] h-[39rem] w-[23rem] overflow-hidden rounded-t-full max-sm:h-[36rem]">
                     <img
                         src={ME}
                         alt="Shrijal Acharya"
-                        className="my__image relative bottom-[2.5rem] left-[-4] h-[98%] w-full max-md:bottom-[2rem] max-md:h-[95%] "
+                        className="my__image relative bottom-[1.6rem] left-[-4] h-[98%] w-[100] max-md:bottom-[2rem] max-md:h-[97%] "
                     />
                 </div>
                 <a

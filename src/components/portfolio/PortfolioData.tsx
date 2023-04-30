@@ -1,8 +1,8 @@
 import JARVIS from "../../assets/jarvis.webp";
-import NEPSE from "../../assets/portfolio1.webp";
+import NEPSE from "../../assets/nepse.webp";
 import COVID from "../../assets/covid.webp";
 import DS from "../../assets/dsa.webp";
-import NETWORK from "../../assets/newtork.webp";
+import NETWORK from "../../assets/network.webp";
 import TEXTUTILITY from "../../assets/text.webp";
 
 export const data = [
