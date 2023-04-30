@@ -6,94 +6,76 @@ const Services = () => {
             <h5>What I Offer</h5>
             <h2>Services</h2>
             <div className="services_container container grid grid-cols-3 gap-[3rem] max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-[1.5rem]">
-                <article className="service hover:cursor-default  hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
+                <article className="service hover:cursor-default hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
                     <div className="service__head">
                         <h3>FullStack Development</h3>
                     </div>
-                    <ul className="service__list p-[2rem]">
+                    <ul className="service__list p-[1.8rem] pl-[1.6rem]">
+                        <li>
+                            <BsCheck2All className="service__list-icon" />
+                            <p>Building custom web applications from scratch</p>
+                        </li>
                         <li>
                             <BsCheck2All className="service__list-icon" />
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing ranmdi
+                                Developing scalable and robust API and
+                                integration
                             </p>
                         </li>
                         <li>
                             <BsCheck2All className="service__list-icon" />
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing ranmdi
+                                Creating responsive and friendly user interfaces
                             </p>
                         </li>
                         <li>
                             <BsCheck2All className="service__list-icon" />
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing ranmdi
-                            </p>
+                            <p>Design and implementation of database schema</p>
                         </li>
                         <li>
                             <BsCheck2All className="service__list-icon" />
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing ranmdi
-                            </p>
-                        </li>
-                        <li>
-                            <BsCheck2All className="service__list-icon" />
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing ranmdi
+                                Automated & manual tests to ensure overall
+                                quality
                             </p>
                         </li>
                     </ul>
                 </article>
-                <article className="service  hover:cursor-default hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
+                <article className="service hover:cursor-default hover:border-[#2f2f69] hover:bg-transparent max-md:h-auto">
                     <div className="service__head">
                         <h3>Cloud Development</h3>
                     </div>
-                    <ul className="service__list p-[2rem]">
+                    <ul className="service__list p-[1.8rem] pl-[1.6rem]">
+                        <li>
+                            <BsCheck2All className="service__list-icon" />
+                            <p>Cloud-native app development & deployment</p>
+                        </li>
                         <li>
                             <BsCheck2All className="service__list-icon" />
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing ranmdi
+                                Serverless Architecture design and
+                                implementation
                             </p>
                         </li>
                         <li>
                             <BsCheck2All className="service__list-icon" />
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing ranmdi
+                                Dockerization and orchestration of applications
                             </p>
                         </li>
                         <li>
                             <BsCheck2All className="service__list-icon" />
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing ranmdi
+                                Managing setup & management of CI / CD pipelines
                             </p>
                         </li>
                         <li>
                             <BsCheck2All className="service__list-icon" />
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing ranmdi
-                            </p>
+                            <p>Scaling container management using Kubernetes</p>
                         </li>
                         <li>
                             <BsCheck2All className="service__list-icon" />
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing anit
-                            </p>
-                        </li>
-                        <li>
-                            <BsCheck2All className="service__list-icon" />
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing anit
-                            </p>
+                            <p>Cloud Security and compliance management</p>
                         </li>
                     </ul>
                 </article>
@@ -101,40 +83,30 @@ const Services = () => {
                     <div className="service__head">
                         <h3>DevOps</h3>
                     </div>
-                    <ul className="service__list p-[2rem]">
+                    <ul className="service__list p-[1.8rem] pl-[1.6rem]">
                         <li>
                             <BsCheck2All className="service__list-icon" />
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing anit
+                                Managing setup & management of CI / CD pipelines
                             </p>
                         </li>
                         <li>
                             <BsCheck2All className="service__list-icon" />
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing anit
-                            </p>
+                            <p>IAC implementation and management techniques</p>
+                        </li>
+                        <li>
+                            <BsCheck2All className="service__list-icon" />
+                            <p>Monitoring and logging setup and maintenance</p>
+                        </li>
+                        <li>
+                            <BsCheck2All className="service__list-icon" />
+                            <p>Cloud Security and compliance management</p>
                         </li>
                         <li>
                             <BsCheck2All className="service__list-icon" />
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing anit
-                            </p>
-                        </li>
-                        <li>
-                            <BsCheck2All className="service__list-icon" />
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing anit
-                            </p>
-                        </li>
-                        <li>
-                            <BsCheck2All className="service__list-icon" />
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing anit
+                                Deployment Automation, Testing & Release
+                                Processes
                             </p>
                         </li>
                     </ul>

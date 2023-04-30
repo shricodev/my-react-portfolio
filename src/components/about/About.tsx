@@ -49,10 +49,13 @@ const About = ({ setActiveNav }: NavbarProps) => {
                         </article>
                     </div>
                     <p className="my-[2rem] ml-0 mr-[2.6rem] text-[#9b969d] max-md:mx-0 max-md:mb-[1.5rem] max-md:mt-[1rem] max-sm:mx-0 max-sm:my-[1.5rem]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.Illum optio, perspiciatis enim suscipit molestiae
-                        ratione natus velit nihil ipsum aliquam laudantium
-                        quaerat earum nemo officiis sed odio alias omnis magnam.
+                        As a full-stack engineer, I enjoy contributing to
+                        open-source projects and surpassing challenges to build
+                        dependable and scalable web applications. Moreover, my
+                        understanding of cybersecurity enables me to secure web
+                        applications. Through contributing to open-source
+                        projects, I strive to enhance my skills while also
+                        giving back to the community.
                     </p>
                     <a
                         href="#contact"
