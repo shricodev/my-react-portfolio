@@ -33,7 +33,7 @@ module.exports = {
                 primary: "#4bb5f5",
             },
             backgroundImage: {
-                site: "url(./src/assets/site-bg.webp)",
+                site: "url(./assets/site-bg.webp)",
             },
         },
     },

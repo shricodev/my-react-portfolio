@@ -7,7 +7,7 @@ import {
     Experience,
     Portfolio,
     Services,
-    Testimonials,
+    // Testimonials,
     Contact,
     Footer,
 } from "./index";
