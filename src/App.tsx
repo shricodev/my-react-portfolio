@@ -1,12 +1,13 @@
 import { useState } from "react";
 import {
+    Navbar,
+    Header,
+    HeaderBanner,
     About,
     Experience,
-    Header,
-    Navbar,
     Portfolio,
-    Testimonials,
     Services,
+    Testimonials,
     Contact,
     Footer,
 } from "./index";
@@ -14,8 +15,9 @@ import {
 function App() {
     const [activeNav, setActiveNav] = useState("#");
     return (
-        <>
+        <div className="overflow-hidden bg-site bg-cover bg-no-repeat">
             <Header setActiveNav={setActiveNav} />
+            <HeaderBanner setActiveNav={setActiveNav} />
             <Navbar activeNav={activeNav} setActiveNav={setActiveNav} />
             <About setActiveNav={setActiveNav} />
             <Experience />
@@ -27,7 +29,7 @@ function App() {
             {/* <Testimonials /> */}
             <Contact />
             <Footer />
-        </>
+        </div>
     );
 }
 

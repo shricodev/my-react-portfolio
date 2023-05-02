@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { SiGmail } from "react-icons/si";
 import { ImLinkedin2 } from "react-icons/im";
 import { RiMessengerLine } from "react-icons/ri";
@@ -20,6 +20,7 @@ const Contact = () => {
                 "YRUXnI-p5lRFR79NT"
             )
             .then((result) => {
+                // TODO: add a better way to clear the form after submission
                 setMessage("");
                 setFullName("");
                 setEmail("");

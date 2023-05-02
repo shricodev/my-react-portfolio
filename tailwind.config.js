@@ -2,6 +2,10 @@
 module.exports = {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
+        fontFamily: {
+            primary: "Poppins",
+            secondary: "Rajdhani",
+        },
         extend: {
             container: {
                 // to center the elemnt horizontally
@@ -27,6 +31,9 @@ module.exports = {
             },
             colors: {
                 primary: "#4bb5f5",
+            },
+            backgroundImage: {
+                site: "url(./src/assets/site-bg.webp)",
             },
         },
     },

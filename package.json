@@ -10,9 +10,11 @@
     },
     "dependencies": {
         "emailjs-com": "^3.2.0",
+        "framer-motion": "^10.12.5",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-icons": "^4.8.0",
+        "react-type-animation": "^3.0.1",
         "swiper": "^9.2.4"
     },
     "devDependencies": {
