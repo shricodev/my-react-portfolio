@@ -17,6 +17,16 @@ const HeaderBanner = ({ setActiveNav }: NavbarProps) => {
         >
             <div className="container">
                 <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-10">
+                    {/* this div handles displaying header image in md screen size */}
+                    <motion.div
+                        variants={fadeIn("down", 0.5)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        className="mx-auto mb-[1.8rem] w-[330px] flex-1 max-sm:hidden lg:hidden"
+                    >
+                        {/* the image for the header banner section */}
+                        <img src={myImage} alt="Shrijal Acharya" />
+                    </motion.div>
                     <div className="flex-1 text-center font-secondary lg:text-left">
                         <motion.h1
                             variants={fadeIn("up", 0.3)}
@@ -118,7 +128,7 @@ const HeaderBanner = ({ setActiveNav }: NavbarProps) => {
                         className="hidden w-[550px] max-w-[320px] flex-1 lg:flex lg:max-w-[485px]"
                     >
                         {/* the image for the header banner section */}
-                        <img src={myImage} alt="" />
+                        <img src={myImage} alt="Shrijal Acharya" />
                     </motion.div>
                 </div>
             </div>
