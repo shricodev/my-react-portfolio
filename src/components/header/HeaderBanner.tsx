@@ -1,15 +1,19 @@
 // import Resume from "../../assets/my-resume.pdf";
+import { AppContext } from "../../App";
+import { useContext } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../Variants";
 import myImage from "../../assets/logo.webp";
 
-type NavbarProps = {
-    setActiveNav: (value: string) => void;
-};
+const HeaderBanner = () => {
+    const context = useContext(AppContext);
 
-const HeaderBanner = ({ setActiveNav }: NavbarProps) => {
+    const { setActiveNav } = context as {
+        setActiveNav: React.Dispatch<React.SetStateAction<string>>;
+    };
+
     return (
         <div
             id="home"

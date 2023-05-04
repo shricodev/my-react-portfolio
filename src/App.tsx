@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, createContext } from "react";
 import {
     Navbar,
     Header,
@@ -12,24 +12,35 @@ import {
     Footer,
 } from "./index";
 
+interface AppContextValue {
+    activeNav: string;
+    setActiveNav: React.Dispatch<React.SetStateAction<string>>;
+}
+
+// using createContext to prevent from passing {activeNav, setActiveNav} to each child component.
+export const AppContext = createContext<AppContextValue | null>(null);
+
 function App() {
     const [activeNav, setActiveNav] = useState("#");
+
     return (
-        <div className="overflow-hidden bg-site bg-cover bg-no-repeat">
-            <Header setActiveNav={setActiveNav} />
-            <HeaderBanner setActiveNav={setActiveNav} />
-            <Navbar activeNav={activeNav} setActiveNav={setActiveNav} />
-            <About setActiveNav={setActiveNav} />
-            <Experience />
-            <Services />
-            <Portfolio />
-            {/* 
-             TODO: uncomment the following testimonials after receiving some. 
-            */}
-            {/* <Testimonials /> */}
-            <Contact />
-            <Footer />
-        </div>
+        <AppContext.Provider value={{ activeNav, setActiveNav }}>
+            <div className="overflow-hidden bg-site bg-cover bg-no-repeat">
+                <Header />
+                <HeaderBanner />
+                <Navbar />
+                <About />
+                <Experience />
+                <Services />
+                <Portfolio />
+                {/* 
+                    TODO: uncomment the following testimonials after receiving some. 
+                */}
+                {/* <Testimonials /> */}
+                <Contact />
+                <Footer />
+            </div>
+        </AppContext.Provider>
     );
 }
 

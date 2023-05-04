@@ -1,3 +1,5 @@
+import { AppContext } from "../../App";
+import { useContext } from "react";
 import { HiOutlineHome } from "react-icons/hi";
 import { AiOutlineUser } from "react-icons/ai";
 import { RiBook2Line } from "react-icons/ri";
@@ -5,12 +7,14 @@ import { RiServiceLine } from "react-icons/ri";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { AiOutlineMessage } from "react-icons/ai";
 
-type NavbarProps = {
-    activeNav: string;
-    setActiveNav: (value: string) => void;
-};
+const Navbar = () => {
+    const context = useContext(AppContext);
 
-const Navbar = ({ activeNav, setActiveNav }: NavbarProps) => {
+    const { activeNav, setActiveNav } = context as {
+        activeNav: string;
+        setActiveNav: React.Dispatch<React.SetStateAction<string>>;
+    };
+    
     return (
         <nav className="align-center container fixed bottom-5 left-0 right-0 z-[9999] flex w-max gap-[3px] rounded-full bg-black bg-opacity-[0.25] p-3 px-[1.2] py-[0.2] backdrop-blur-lg">
             <a

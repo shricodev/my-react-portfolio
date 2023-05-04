@@ -1,10 +1,10 @@
-import { SiLeetcode } from "react-icons/si";
-import { SiGeeksforgeeks } from "react-icons/si";
-import { SiCodingninjas } from "react-icons/si";
 import { FiTwitter } from "react-icons/fi";
 import { FiInstagram } from "react-icons/fi";
 import { GrLinkedinOption } from "react-icons/gr";
 import { SiHashnode } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
+import { SiGeeksforgeeks } from "react-icons/si";
+import { SiCodingninjas } from "react-icons/si";
 
 const Footer = () => {
     return (

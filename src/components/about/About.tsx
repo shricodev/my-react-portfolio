@@ -1,13 +1,17 @@
+import { AppContext } from "../../App";
+import { useContext } from "react";
 import aboutImage from "../../assets/about-image.webp";
 import { FaAward } from "react-icons/fa";
 import { HiOutlineUsers } from "react-icons/hi";
 import { BsFolderCheck } from "react-icons/bs";
 
-type NavbarProps = {
-    setActiveNav: (value: string) => void;
-};
+const About = () => {
+    const context = useContext(AppContext);
 
-const About = ({ setActiveNav }: NavbarProps) => {
+    const { setActiveNav } = context as {
+        setActiveNav: React.Dispatch<React.SetStateAction<string>>;
+    };
+
     return (
         <section id="about">
             <h5>Get to know</h5>
