@@ -47,7 +47,7 @@ const Portfolio = () => {
             <div className="mt-[3.5rem] flex justify-center">
                 <p className="text-[#ffffffb8]">
                     For more visit{" "}
-                    <a href="https://github.com/OctoPie23" target="_blank">
+                    <a href="https://github.com/shricodev" target="_blank">
                         <span className="cursor-pointer font-bold text-primary">
                             My Github Profile✌️
                         </span>

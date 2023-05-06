@@ -109,7 +109,7 @@ const HeaderBanner = () => {
                             className="mx-auto flex max-w-max gap-x-6 text-[20px] lg:mx-0"
                         >
                             <a
-                                href="https://github.com/OctoPie23"
+                                href="https://github.com/shricodev"
                                 target="_blank"
                             >
                                 <FaGithub />
@@ -120,7 +120,7 @@ const HeaderBanner = () => {
                             >
                                 <FaLinkedinIn />
                             </a>
-                            <a href="https://twitter.com/OctoPie23">
+                            <a href="https://twitter.com/shricodev">
                                 <FaTwitter />
                             </a>
                         </motion.div>

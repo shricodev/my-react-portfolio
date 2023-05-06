@@ -41,10 +41,10 @@ const Footer = () => {
             </ul>
 
             <div className="footer__socials mb-[2rem] flex justify-center gap-[1rem] max-sm:mb-[2.2rem]">
-                <a href="https://twitter.com/OctoPie23" target="_blank">
+                <a href="https://twitter.com/shricodev" target="_blank">
                     <FiTwitter />
                 </a>
-                <a href="https://instagram.com/OctoPie_23" target="_blank">
+                <a href="https://instagram.com/shrijal_acharya" target="_blank">
                     <FiInstagram />
                 </a>
                 <a href="https://linkedin.com/in/shrijal007" target="_blank">
@@ -57,9 +57,10 @@ const Footer = () => {
 
             <h3 className="coding__profiles-tag">CODING PROFILES</h3>
             <div className="code__profiles mb-[2rem] flex justify-center gap-[1rem]">
-                <a href="https://leetcode.com/OctoPiyush23" target="_blank">
+                <a href="https://leetcode.com/shricodev" target="_blank">
                     <SiLeetcode />
                 </a>
+                {/* my old username which i couldn't change for GFG */}
                 <a
                     href="https://auth.geeksforgeeks.org/user/octopie23"
                     target="_blank"
