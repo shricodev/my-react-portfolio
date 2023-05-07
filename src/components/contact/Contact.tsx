@@ -6,9 +6,21 @@ import emailjs from "emailjs-com";
 
 const Contact = () => {
     // this holds the cred of the user
-    const [fullName, setFullName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+    const [formData, setFormData] = useState({
+        fullName: "",
+        email: "", 
+        message: "",
+    });
+
+    function handleChange(event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
+        setFormData((prevFormData) => {
+            return {
+                ...prevFormData,
+                // by using [] around the name, we are able to interpret it as a key of an object which has the same name as the formData key names(states).
+                [event.target.name]: event.target.value
+            }
+        })
+    }
 
     function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -21,9 +33,7 @@ const Contact = () => {
             )
             .then((result) => {
                 // TODO: add a better way to clear the form after submission
-                setMessage("");
-                setFullName("");
-                setEmail("");
+                setFormData({fullName: "", email: "", message: ""});
                 console.log(result.text);
             })
             .catch((error) => {
@@ -79,32 +89,32 @@ const Contact = () => {
                     className="flex flex-col gap-[1.2rem]"
                 >
                     <input
-                        className="w-[100%] rounded-full p-[1.5rem]  autofill:bg-transparent"
+                        className="w-[100%] rounded-full p-[1.5rem] autofill:bg-transparent"
                         type="text"
-                        name="name"
-                        value={fullName}
+                        value={formData.fullName}
+                        name="fullName"
                         placeholder="Your Full Name"
-                        onChange={(event) => setFullName(event.target.value)}
+                        onChange={handleChange}
                         required
                     />
                     <input
                         className="w-[100%] rounded-full p-[1.5rem]  autofill:bg-transparent"
                         type="email"
+                        value={formData.email}
                         name="email"
-                        value={email}
                         placeholder="Your Email"
-                        onChange={(event) => setEmail(event.target.value)}
+                        onChange={handleChange}
                         required
                     />
                     <textarea
                         className="w-[100%] rounded-2xl bg-transparent p-[1.5rem] autofill:bg-transparent"
                         name="message"
-                        value={message}
+                        value={formData.message}
                         rows={8}
                         placeholder="Your Message"
-                        onChange={(event) => setMessage(event.target.value)}
+                        onChange={handleChange}
                         required
-                    ></textarea>
+                    />
                     <button
                         type="submit"
                         className="btn btn-primary mt-2 rounded-2xl"
