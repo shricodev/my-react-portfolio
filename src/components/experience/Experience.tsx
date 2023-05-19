@@ -194,6 +194,16 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
+            <div className="mt-[3.5rem] flex justify-center">
+                <p className="text-[#ffffffb8]">
+                    Read My Blogs here:{" "}
+                    <a href="https://shricodev.hashnode.dev" target="_blank">
+                        <span className="cursor-pointer font-bold text-primary">
+                            Hashnode🚀
+                        </span>
+                    </a>
+                </p>
+            </div>
         </section>
     );
 };
