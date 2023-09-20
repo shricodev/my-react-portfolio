@@ -41,7 +41,7 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials mb-[2rem] flex justify-center gap-[1rem] max-sm:mb-[2.2rem]">
-        <a href="https://twitter.com/shricodev" target="_blank" rel="noopener">
+        <a href="https://twitter.com/shricodevv" target="_blank" rel="noopener">
           <FiTwitter />
         </a>
         <a

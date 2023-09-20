@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../Variants";
-import myImage from "../../assets/logo.webp";
+import myImage from "../../assets/my-logo.png";
 
 const HeaderBanner = () => {
   const context = useContext(AppContext);
@@ -119,7 +119,7 @@ const HeaderBanner = () => {
                 <FaLinkedinIn />
               </a>
               <a
-                href="https://twitter.com/shricodev"
+                href="https://twitter.com/shricodevv"
                 target="_blank"
                 rel="noopener"
               >

@@ -7,6 +7,21 @@ import TEXTUTILITY from "../../assets/text.webp";
 
 export const data = [
   {
+    id: 234829,
+    image: DS,
+    title: "ConvoCrowd Social",
+    github: "https://github.com/shricodev/ConvoCrowd-Social",
+    noLive: false,
+    liveUrl: "https://convo-crowd-social.vercel.app"
+  },
+  {
+    id: 234819,
+    image: JARVIS,
+    title: "OpenAI Collapsible Chatbot",
+    github: "https://github.com/shricodev/OpenAI-collapsable-Chatbot",
+    noLive: true,
+  },
+  {
     id: 234879,
     image: NEPSE,
     title: "IPO Monitor NEPSE - Stock",
