@@ -28,6 +28,10 @@
         text-decoration: none;
     }
 
+    ::selection {
+        @apply bg-[#d5a5ff];
+    }
+
     html {
         scroll-behavior: smooth;
     }
