@@ -850,11 +850,6 @@ source-map-js@^1.0.2:
   resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
 
-ssr-window@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
-  integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
-
 sucrase@^3.32.0:
   version "3.33.0"
   resolved "https://registry.yarnpkg.com/sucrase/-/sucrase-3.33.0.tgz#092c8d2f99a191f2cd9f1fdd52113772f4241f6e"
@@ -873,12 +868,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-swiper@^9.2.4:
-  version "9.2.4"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-9.2.4.tgz#2fa3cf58cef586366f674a10fa56fe6eec2026fe"
-  integrity sha512-L7y3K/iiMXNYQ94FbfcJn7jex4QPnS4+voXGupTdC+UHW4XrR40QDdm4c9hXJ+Br0Il7PP0vP1W3goM9/Ly6Sg==
-  dependencies:
-    ssr-window "^4.0.2"
+swiper@^10.3.1:
+  version "10.3.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-10.3.1.tgz#4d19d7e9d0bd184c30accf2c1b180cfe41b9f4af"
+  integrity sha512-24Wk3YUdZHxjc9faID97GTu6xnLNia+adMt6qMTZG/HgdSUt4fS0REsGUXJOgpTED0Amh/j+gRGQxsLayJUlBQ==
 
 tailwindcss@^3.3.3:
   version "3.3.3"
