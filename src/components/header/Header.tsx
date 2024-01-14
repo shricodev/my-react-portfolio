@@ -23,11 +23,11 @@ const Header = () => {
               SHRICODEV
             </p>
           </a>
-          <a href="#portfolio">
+          <a href="#contact">
             <button
               className="btn-header h-[48px] rounded-full px-6 text-sm font-medium text-white"
               onClick={() => {
-                setActiveNav("#portfolio");
+                setActiveNav("#contact");
               }}
             >
               Work with Me

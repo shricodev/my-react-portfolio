@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../Variants";
-import myImage from "../../assets/my-logo.png";
+import myImage from "../../assets/my-logo.webp";
 
 const HeaderBanner = () => {
   const context = useContext(AppContext);
@@ -91,7 +91,11 @@ const HeaderBanner = () => {
               </a>
               {/* TODO: Add resume when ready */}
               <a href="#download" download>
-                <button className="text-gradient bg-gradient-to-r from-[#42A6E3] to-[#FF56F6] bg-clip-text font-primary text-base font-bold text-transparent hover:from-[#FF56F6] hover:to-[#42A6E3]">
+                <button
+                  className="text-gradient bg-gradient-to-r from-[#42A6E3] to-[#FF56F6] bg-clip-text font-primary text-base font-bold text-transparent hover:from-[#FF56F6] hover:to-[#42A6E3]"
+                  // Remove this event handler when resume is ready
+                  onClick={(event) => event.preventDefault()}
+                >
                   Download Resume
                 </button>
               </a>
@@ -112,7 +116,7 @@ const HeaderBanner = () => {
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/shrijal007"
+                href="https://linkedin.com/in/iamshrijal"
                 target="_blank"
                 rel="noopener"
               >

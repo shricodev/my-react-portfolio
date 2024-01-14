@@ -29,7 +29,7 @@ const Experience = () => {
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
                 <h4>Tailwind</h4>
-                <small className="text-light">Master</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
@@ -42,15 +42,15 @@ const Experience = () => {
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>CSS</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>HTML</h4>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>HTML</h4>
-                <small className="text-light">Experienced</small>
+                <h4>CSS</h4>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
           </div>
@@ -71,7 +71,7 @@ const Experience = () => {
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
                 <h4>Linux</h4>
-                <small className="text-light">Master</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
@@ -113,7 +113,7 @@ const Experience = () => {
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
                 <h4>Kubernetes</h4>
-                <small className="text-light">Master</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
           </div>
@@ -127,7 +127,7 @@ const Experience = () => {
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
                 <h4>Python</h4>
-                <small className="text-light">Master</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
@@ -141,14 +141,14 @@ const Experience = () => {
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
                 <h4>NodeJS</h4>
-                <small className="text-light">Master</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
                 <h4>Postgres</h4>
-                <small className="text-light">Master</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details flex gap-[1rem]">
@@ -161,7 +161,7 @@ const Experience = () => {
             <article className="experience__details flex gap-[1rem]">
               <BsPatchCheckFill className="color-primary mt-[6px]" />
               <div>
-                <h4>Java</h4>
+                <h4>Rust</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>

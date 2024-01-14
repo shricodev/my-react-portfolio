@@ -34,7 +34,7 @@ const About = () => {
               <div className="about__card h-full flex-1">
                 <FaAward className="about__icon" />
                 <h5>Experience</h5>
-                <small>2+ Years of Experience</small>
+                <small>3+ Years of Experience</small>
               </div>
             </article>
             <article className="flex flex-col">

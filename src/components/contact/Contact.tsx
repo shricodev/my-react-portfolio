@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { SiGmail } from "react-icons/si";
 import { ImLinkedin2 } from "react-icons/im";
-import { RiMessengerLine } from "react-icons/ri";
+import { FaDiscord } from "react-icons/fa";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -64,9 +64,9 @@ const Contact = () => {
           <article className="contact__option flex flex-col items-center">
             <ImLinkedin2 className="contact__option-icon mb-[0.5rem] text-[1.5rem]" />
             <h4>LinkedIn</h4>
-            <h5>shrijal007</h5>
+            <h5>iamshrijal</h5>
             <a
-              href="https://www.linkedin.com/in/shrijal007/"
+              href="https://www.linkedin.com/in/iamshrijal/"
               target="_blank"
               className="inline-block p-[0.5rem] text-[0.9rem]"
               rel="noopener"
@@ -75,11 +75,11 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option flex flex-col items-center">
-            <RiMessengerLine className="contact__option-icon mb-[0.5rem] text-[1.5rem]" />
-            <h4>Messenger</h4>
-            <h5>shrijal007</h5>
+            <FaDiscord className="contact__option-icon mb-[0.5rem] text-[1.5rem]" />
+            <h4>Discord</h4>
+            <h5>shricodev</h5>
             <a
-              href="https://m.me/shrijal007"
+              href="https://discord.com/users/1082700727220183151"
               target="_blank"
               className="inline-block p-[0.5rem] text-[0.9rem]"
               rel="noopener"

@@ -32,9 +32,10 @@ const Footer = () => {
         <li>
           <a href="#portfolio">PORTFOLIO</a>
         </li>
-        <li>
+        {/* TODO: Uncomment this line when I receive testimonials */}
+        {/* <li>
           <a href="#testimonials">TESTIMONIALS</a>
-        </li>
+        </li> */}
         <li>
           <a href="#contact">CONTACT</a>
         </li>
@@ -45,14 +46,14 @@ const Footer = () => {
           <FiTwitter />
         </a>
         <a
-          href="https://instagram.com/shrijal_acharya"
+          href="https://instagram.com/iampiyush.ach"
           target="_blank"
           rel="noopener"
         >
           <FiInstagram />
         </a>
         <a
-          href="https://linkedin.com/in/shrijal007"
+          href="https://linkedin.com/in/iamshrijal"
           target="_blank"
           rel="noopener"
         >
