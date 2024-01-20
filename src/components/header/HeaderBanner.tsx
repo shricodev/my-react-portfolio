@@ -123,7 +123,7 @@ const HeaderBanner = () => {
                 <FaLinkedinIn />
               </a>
               <a
-                href="https://twitter.com/shricodevv"
+                href="https://twitter.com/shricodev"
                 target="_blank"
                 rel="noopener"
               >
