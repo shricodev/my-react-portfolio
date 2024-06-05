@@ -2,7 +2,7 @@ import { useState } from "react";
 import { SiGmail } from "react-icons/si";
 import { ImLinkedin2 } from "react-icons/im";
 import { FaDiscord } from "react-icons/fa";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   // this holds the cred of the user

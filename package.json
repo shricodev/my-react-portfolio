@@ -1,32 +1,32 @@
 {
-    "name": "my-react-portfolio",
-    "private": true,
-    "version": "0.1.0",
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "tsc && vite build",
-        "preview": "vite preview"
-    },
-    "dependencies": {
-        "emailjs-com": "^3.2.0",
-        "framer-motion": "^10.16.3",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "react-icons": "^4.8.0",
-        "react-type-animation": "^3.0.1",
-        "swiper": "^9.2.4"
-    },
-    "devDependencies": {
-        "@types/react": "^18.0.28",
-        "@types/react-dom": "^18.2.4",
-        "@vitejs/plugin-react-swc": "^3.0.0",
-        "autoprefixer": "^10.4.14",
-        "postcss": "^8.4.21",
-        "prettier": "^2.8.7",
-        "prettier-plugin-tailwindcss": "^0.2.8",
-        "tailwindcss": "^3.3.3",
-        "typescript": "^5.0.4",
-        "vite": "^4.3.9"
-    }
+  "name": "my-react-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "framer-motion": "^10.16.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-type-animation": "^3.0.1",
+    "swiper": "^9.2.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.2.4",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.8",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9"
+  }
 }
