@@ -1,6 +1,6 @@
-import CLIENT1 from "../../assets/avatar1.webp";
-import CLIENT2 from "../../assets/avatar2.webp";
-import CLIENT3 from "../../assets/avatar3.webp";
+import CLIENT1 from "../../../assets/avatar1.webp";
+import CLIENT2 from "../../../assets/avatar2.webp";
+import CLIENT3 from "../../../assets/avatar3.webp";
 
 export const data = [
   {

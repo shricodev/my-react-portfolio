@@ -1,9 +1,9 @@
-import { AppContext } from "../../App";
 import { useContext } from "react";
-import aboutImage from "../../assets/about-image.webp";
+import { BsFolderCheck } from "react-icons/bs";
 import { FaAward } from "react-icons/fa";
 import { HiOutlineUsers } from "react-icons/hi";
-import { BsFolderCheck } from "react-icons/bs";
+import { AppContext } from "../../App";
+import aboutImage from "../../assets/about-image.webp";
 
 const About = () => {
   const context = useContext(AppContext);
@@ -54,11 +54,10 @@ const About = () => {
           </div>
           <p className="my-[2rem] ml-0 mr-[2.6rem] text-[#9b969d] max-md:mx-0 max-md:mb-[1.5rem] max-md:mt-[1rem] max-sm:mx-0 max-sm:my-[1.5rem]">
             As a full-stack engineer, I enjoy contributing to open-source
-            projects and surpassing challenges to build dependable and scalable
-            web applications. Moreover, my understanding of cybersecurity
-            enables me to secure web applications. Through contributing to
-            open-source projects, I strive to enhance my skills while also
-            giving back to the community.
+            projects and building scalable web applications. Moreover, my basic
+            knowledge of cybersecurity enables me to secure web applications.
+            Through contributing to open-source projects, I strive to enhance my
+            skills while also giving back to the community.
           </p>
           <a
             href="#contact"

@@ -1,15 +1,16 @@
-import { useState, createContext } from "react";
+import { createContext, useState } from "react";
+import { Toaster } from "react-hot-toast";
 import {
-  Navbar,
-  Header,
-  HeaderBanner,
   About,
-  Experience,
-  Portfolio,
-  Services,
   // Testimonials,
   Contact,
+  Experience,
   Footer,
+  Header,
+  HeaderBanner,
+  Navbar,
+  Portfolio,
+  Services,
 } from "./index";
 
 interface AppContextValue {
@@ -33,12 +34,14 @@ function App() {
         <Experience />
         <Services />
         <Portfolio />
-        {/* 
-            TODO: uncomment the following testimonials after receiving some. 
-        */}
+
+        {/* TODO: uncomment the following testimonials after receiving some. */}
         {/* <Testimonials /> */}
         <Contact />
         <Footer />
+
+        {/* Toast provider for react-hot-toast */}
+        <Toaster />
       </div>
     </AppContext.Provider>
   );

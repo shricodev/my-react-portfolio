@@ -1,8 +1,9 @@
-import { useState } from "react";
-import { SiGmail } from "react-icons/si";
-import { ImLinkedin2 } from "react-icons/im";
-import { FaDiscord } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import toast from "react-hot-toast";
+import { FaDiscord } from "react-icons/fa";
+import { ImLinkedin2 } from "react-icons/im";
+import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
   // this holds the cred of the user
@@ -11,6 +12,8 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+  const notify = (message: string) => toast(message);
 
   function handleChange(
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -28,18 +31,17 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_8tofpvo",
-        "template_5zek0ht",
+        import.meta.env.VITE_EMAILJS_SERVICEID!,
+        import.meta.env.VITE_EMAILJS_TEMPLATEID!,
         e.currentTarget,
-        "YRUXnI-p5lRFR79NT"
+        import.meta.env.VITE_EMAILJS_PUBLICKEY!
       )
       .then((result) => {
-        // TODO: add a better way to clear the form after submission
         setFormData({ fullName: "", email: "", message: "" });
-        console.log(result.text);
+        notify("The message was sent successfully!");
       })
       .catch((error) => {
-        console.error(error.text);
+        notify("Your message could not be sent.");
       });
   }
   return (

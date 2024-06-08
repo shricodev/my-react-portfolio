@@ -1,11 +1,11 @@
 // import Resume from "../../assets/my-resume.pdf";
-import { AppContext } from "../../App";
-import { useContext } from "react";
-import { TypeAnimation } from "react-type-animation";
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../Variants";
-import myImage from "../../assets/my-logo.webp";
+import { useContext } from "react";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
+import { AppContext } from "../../../App";
+import { fadeIn } from "../../../variants";
+import myImage from "../../../assets/my-logo.webp";
 
 const HeaderBanner = () => {
   const context = useContext(AppContext);
@@ -87,16 +87,6 @@ const HeaderBanner = () => {
               >
                 <button className="btn-header h-[50px] rounded-full px-6 font-secondary text-sm font-medium text-white">
                   My Portfolio
-                </button>
-              </a>
-              {/* TODO: Add resume when ready */}
-              <a href="#download" download>
-                <button
-                  className="text-gradient bg-gradient-to-r from-[#42A6E3] to-[#FF56F6] bg-clip-text font-primary text-base font-bold text-transparent hover:from-[#FF56F6] hover:to-[#42A6E3]"
-                  // Remove this event handler when resume is ready
-                  onClick={(event) => event.preventDefault()}
-                >
-                  Download Resume
                 </button>
               </a>
             </motion.div>
